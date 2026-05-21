@@ -24,6 +24,10 @@ export const registrarVistaPublicacion = async (
       {
         method: "POST",
         headers: getAuthHeaders(),
+<<<<<<< HEAD
+=======
+        credentials: "include",
+>>>>>>> 36641715c2c9fb5719778fa8cae85b65f9751c39
       }
     );
 
@@ -47,6 +51,10 @@ export const registrarVistaInmueble = async (
       {
         method: "POST",
         headers: getAuthHeaders(),
+<<<<<<< HEAD
+=======
+        credentials: "include",
+>>>>>>> 36641715c2c9fb5719778fa8cae85b65f9751c39
       }
     );
 
@@ -72,7 +80,11 @@ export const registrarCompartidoPublicacion = async (
         method: "POST",
         headers: getAuthHeaders(),
         body: JSON.stringify({
+<<<<<<< HEAD
           plataforma: plataforma || "general",
+=======
+          medio: plataforma || "general",
+>>>>>>> 36641715c2c9fb5719778fa8cae85b65f9751c39
         }),
       }
     );
@@ -99,7 +111,11 @@ export const registrarCompartidoInmueble = async (
         method: "POST",
         headers: getAuthHeaders(),
         body: JSON.stringify({
+<<<<<<< HEAD
           plataforma: plataforma || "general",
+=======
+          medio: plataforma || "general",
+>>>>>>> 36641715c2c9fb5719778fa8cae85b65f9751c39
         }),
       }
     );
@@ -162,6 +178,12 @@ export const obtenerMisPropiedadesVistas = async () => {
   }
 };
 // Alias para mantener compatibilidad con componentes ya creados
+<<<<<<< HEAD
 export const registrarVisualizacion = registrarVistaInmueble;
 
 export const registrarCompartido = registrarCompartidoInmueble;
+=======
+export const registrarVisualizacion = registrarVistaPublicacion;
+
+export const registrarCompartido = registrarCompartidoPublicacion;
+>>>>>>> 36641715c2c9fb5719778fa8cae85b65f9751c39
